@@ -61,3 +61,40 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+
+;; maximize
+;; (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+
+;;(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+;; prettier
+(add-hook 'after-init-hook #'global-prettier-mode)
+
+;; evil-mode
+;(define-key evil-normal-state-map (kbd "k") 'evil-next-line)
+;(define-key evil-normal-state-map (kbd "k") 'evil-next-line)
+;(define-key evil-normal-state-map (kbd "k") 'evil-next-line)
+;(define-key evil-normal-state-map (kbd "k") 'evil-next-line)
+
+
+
+;(define-key evil-normal-state-map "o" 'evil-insert)
+;(define-key evil-normal-state-map "O" 'evil-insert-line)
+
+;(define-key evil-normal-state-map "j" 'evil-backward-char)
+;(define-key evil-normal-state-map "k" 'evil-next-line)
+;(define-key evil-normal-state-map "i" 'evil-previous-line)
+
+;(define-key evil-visual-state-map "j" 'evil-backward-char)
+;(define-key evil-visual-state-map "k" 'evil-next-visual-line)
+;(define-key evil-visual-state-map "i" 'evil-previous-visual-line)
+
+
+(load-file "~/.doom.d/config/evil.el")
+(load-file "~/.doom.d/config/treemacs.el")
+(load-file "~/.doom.d/config/magit.el")

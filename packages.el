@@ -53,3 +53,4 @@
 (package! prettier)
 
 (package! company-tabnine)
+(package! lua-mode)
