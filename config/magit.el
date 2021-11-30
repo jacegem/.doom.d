@@ -8,17 +8,19 @@
 (evil-set-initial-state 'magit-log-mode 'normal)
 
 (evil-define-key 'normal magit-mode-map
-    ;"I" 'magit-gitignore
     "i" 'magit-previous-line
     "k" 'magit-next-line
-    "I" 'magit-gitignore)
+    "I" 'magit-gitignore
+    "j" 'magit-section-up
+    "l" 'magit-section-toggle
+    )
+
 (evil-define-key 'normal magit-log-mode-map
-    ;"I" 'magit-gitignore
     "i" 'magit-previous-line
     "k" 'magit-next-line
-    "I" 'magit-gitignore)
+    "I" 'mag it-gitignore)
+
 (evil-define-key 'normal magit-diff-mode-map
-    ; "I" 'magit-gitignore
     "i" 'magit-previous-line
     "k" 'magit-next-line
     "I" 'magit-gitignore)
