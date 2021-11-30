@@ -12,8 +12,7 @@
     "k" 'magit-next-line
     "I" 'magit-gitignore
     "j" 'magit-section-up
-    "l" 'magit-section-toggle
-    )
+    "l" 'magit-section-toggle)
 
 (evil-define-key 'normal magit-log-mode-map
     "i" 'magit-previous-line
