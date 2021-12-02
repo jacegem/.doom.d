@@ -86,3 +86,4 @@
 (load! "./config/magit.el")
 (load! "./config/dired.el")
 (load! "./config/global-key-set.el")
+(load! "./config/org.el")
